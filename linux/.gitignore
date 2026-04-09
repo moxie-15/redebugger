@@ -1,0 +1,6 @@
+flutter/ephemeral
+lib/auth/auth_service.dart
+lib/auth/auth_service_impl.dart
+lib/auth/user.dart
+lib/auth_service
+lib/sign_in_screen.dart

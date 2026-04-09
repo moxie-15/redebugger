@@ -1,0 +1,48 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "glorious-hope",
+          "appId": "1:359439067832:android:2d91fa45cd0896d94e224d",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "glorious-hope",
+          "configurations": {
+            "android": "1:359439067832:android:2d91fa45cd0896d94e224d",
+            "ios": "1:359439067832:ios:57d751729e2123d24e224d",
+            "macos": "1:359439067832:ios:57d751729e2123d24e224d",
+            "web": "1:359439067832:web:0a1c53c690c50f6b4e224d",
+            "windows": "1:359439067832:web:b32119845be32be44e224d"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "database": "(default)",
+    "location": "africa-south1",
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+     
+      "predeploy": [
+  "npm --prefix \"$RESOURCE_DIR\" run lint -- --fix"
+]
+    }
+  ]
+}
